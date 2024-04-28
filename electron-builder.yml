@@ -1,0 +1,14 @@
+appId: codes.fuji.nook
+productName: nook
+copyright: Copyright © 2024 FujiwaraChoki
+directories:
+  output: dist
+  buildResources: resources
+files:
+  - from: .
+    filter:
+      - package.json
+      - app
+extraFiles:
+  - scripts
+publish: null
