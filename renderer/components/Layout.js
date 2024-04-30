@@ -81,12 +81,11 @@ const Layout = ({ children }) => {
     const file = e.target.files[0];
     const reader = new FileReader();
 
-    const soundTitleFull = file.name;
-    // Remove file extension from title
-    const soundTitle = soundTitleFull.split(".").slice(0, -1).join(".");
-    let soundData;
-
     reader.onload = (event) => {
+      const soundTitleFull = file.name;
+      // Remove file extension from title
+      const soundTitle = soundTitleFull.split(".").slice(0, -1).join(".");
+      let soundData;
       soundData = event.target.result.split(",")[1];
 
       console.log(soundTitle, soundData.substring(0, 10) + "...");
