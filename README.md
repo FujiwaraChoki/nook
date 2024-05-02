@@ -18,7 +18,7 @@ pip install -r requirements.txt
 cd ..
 yarn install
 
-start cmd /k "cd server && python server.py"
+start cmd /k "cd server && python main.py"
 
 yarn dev
 ```
@@ -33,7 +33,7 @@ pip install -r requirements.txt
 cd ..
 yarn install
 
-yarn dev & (cd server && python server.py)
+yarn dev & (cd server && python main.py)
 ```
 
 ## Usage
